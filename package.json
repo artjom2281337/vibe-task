@@ -1,0 +1,40 @@
+{
+  "name": "application-management-system",
+  "version": "1.0.0",
+  "description": "A web built with Node.js, Express, MongoDB, Handlebars. the system manages job applications.\r It supports full CRUD functionalities for candidates, application,and interview notes, along with a simple UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atenidkoye/Application-management-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/atenidkoye/Application-management-system/issues"
+  },
+  "homepage": "https://github.com/atenidkoye/Application-management-system#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.1",
+    "express-session": "^1.19.0",
+    "joi": "^18.1.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.1",
+    "nodemailer": "^8.0.6"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.96",
+    "nodemon": "^3.1.14"
+  }
+}
