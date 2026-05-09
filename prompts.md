@@ -1,0 +1,5 @@
+You have the final backend code for the Application management system. Basically, just a system for the HR's and applicants. Applicants should add applications, and HR's with admin access can see candidates information, applications, also they can add notes to specific applications, change the status of them as listed in code. For more informetion, there's @README.md file. 
+Your Task: create a frontent for this system using React. Frontend should be suitable, professional, correct and good-looking.
+IMPORTANT! DO NOT change the backend structure. The only thing you can change is the Handlebars files and mentions, because at first Handlebars was implemented for the frontend, you will use React. Application should work correctly. As it is the prototype, for now user can register own admin accounts as HR's.
+
+i want to have link for applying on the login page. Also after applying i want to have link that goes to main page (login page). on the notes i don't want to see the ID of author, instead of it put the email of author or just delete that field.

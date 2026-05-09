@@ -62,7 +62,8 @@ hbs.helpers = {
     getStarState: (index, total) => (index <= total) ? "on" : "off",
     isChecked: (a, b) => (a == b) ? "checked" : "",
     getCandidateName: (candidateNames, candidateID) => candidateNames.filter(candidate => candidate._id == candidateID)[0].name,
-    showNote: (note) => hbs.handlebars.compile(note.template)()
+    showNote: (note) => hbs.handlebars.compile(note.template)(),
+    json: (context) => JSON.stringify(context || {})
 }
 
 // Setting up handlebars
@@ -136,9 +137,14 @@ app.get("/applications/:id", async (req, res) => {
         noUserNote: count == 0,
         application,
         candidateName,
+        currentUser: user,
         notes: await getNotesWithTemplate(hbs, application._id, user)
     })
 })
+
+app.get("/candidates/view", auth, (req, res) => {
+    res.redirect("/candidates");
+});
 
 // Error handler
 app.use(errorHandler);
